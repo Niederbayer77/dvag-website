@@ -2,46 +2,73 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über mich</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über mich – Max Moser</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gold { background-color: #D4AF37; color: white; }
+    .gold:hover { background-color: #c09c2e; }
+  </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
+
 <header class="sticky top-0 z-50 bg-[#111111] text-white">
   <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
     <h1 class="text-xl font-bold">Beraten statt bluffen</h1>
-    
-<div class="md:hidden flex items-center">
-  <button onclick="toggleMenu()" class="text-white focus:outline-none">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-</div>
-<nav id="mobile-menu" class="md:hidden hidden flex-col gap-2 px-4 pb-4 text-white font-medium">
-  <a href="index.html">Start</a>
-  <a href="beratung.html">Beratung</a>
-  <a href="loesungen.html">Lösungen</a>
-  <a href="reels-tipps.html">Reels & Tipps</a>
-  <a href="termin.html">Termin</a>
-  <a href="ueber-mich.html">Über mich</a>
-</nav>
-<nav class="hidden md:flex gap-6 text-white font-medium">
-  <a href="index.html">Start</a>
-  <a href="beratung.html">Beratung</a>
-  <a href="loesungen.html">Lösungen</a>
-  <a href="reels-tipps.html">Reels & Tipps</a>
-  <a href="termin.html">Termin</a>
-  <a href="ueber-mich.html">Über mich</a>
-</nav>
-
+    <div class="md:hidden flex items-center">
+      <button onclick="toggleMenu()" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <nav class="hidden md:flex gap-6 font-medium">
+      <a href="index.html" class="hover:underline">Start</a>
+      <a href="beratung.html" class="hover:underline">Beratung</a>
+      <a href="loesungen.html" class="hover:underline">Lösungen</a>
+      <a href="reels-tipps.html" class="hover:underline">Reels & Tipps</a>
+      <a href="termin.html" class="hover:underline">Termin</a>
+      <a href="ueber-mich.html" class="hover:underline font-bold">Über mich</a>
+    </nav>
   </div>
+  <nav id="mobile-menu" class="md:hidden hidden flex-col gap-2 px-4 pb-4 text-white font-medium">
+    <a href="index.html">Start</a>
+    <a href="beratung.html">Beratung</a>
+    <a href="loesungen.html">Lösungen</a>
+    <a href="reels-tipps.html">Reels & Tipps</a>
+    <a href="termin.html">Termin</a>
+    <a href="ueber-mich.html">Über mich</a>
+  </nav>
 </header>
-<main class="max-w-4xl mx-auto px-6 py-10">
-  <h2 class="text-3xl font-bold text-[#003366] mb-4">Über mich</h2>
-  <p class="text-lg text-gray-600">Hier entsteht in Kürze der Bereich „Über mich“.</p>
+
+<main class="max-w-5xl mx-auto px-6 py-10">
+  <h2 class="text-3xl font-bold text-[#003366] text-center mb-6">Vertrauen beginnt mit Verständnis</h2>
+  <div class="flex flex-col md:flex-row gap-8 items-center">
+    <div class="md:w-1/2">
+      <img src="./img/portrait.jpg" alt="Max Moser" class="rounded-xl shadow-lg w-full" />
+    </div>
+    <div class="md:w-1/2 text-base text-gray-700 leading-relaxed space-y-4">
+      <p>Ich bin Maximilian Moser – Familienvater, Unternehmer und jemand, der zuhört, bevor er berät.</p>
+      <p>Mein Weg führte mich durch die USA, Europa und Deutschland.<br>
+      Ich habe Qualität für Flugzeughersteller geprüft, ERP-Systeme in Unternehmen mit aufgebaut und internationale Teams geführt.</p>
+      <p>Ich habe nicht nur internationale Prozesse gestaltet –<br>
+      sondern auch als Berater Menschen und Unternehmen dabei geholfen, das passende Produkt zu finden und die richtige Entscheidung zu treffen.<br>
+      Diese Fähigkeit zur ehrlichen Beratung ziehe ich bis heute jeder Verkaufsmasche vor.</p>
+      <p>Heute nutze ich diese Erfahrung, um Menschen dabei zu begleiten, Struktur und Sicherheit in ihre Finanzen zu bringen.</p>
+      <p>Was Kunden an mir schätzen: Klarheit, Bodenständigkeit – und dass ich ihre Sprache spreche, nicht die des Fachchinesischs.</p>
+      <p class="text-xl italic font-semibold text-center pt-4">Verständnis ist der Anfang jeder guten Entscheidung.</p>
+    </div>
+  </div>
 </main>
+
 <footer style="background-color:#111111; color:white;" class="text-center text-sm py-6 mt-16">
   <p>&copy; 2025 Max Moser | Beraten statt bluffen</p>
   <div class="mt-2 space-x-4">
@@ -49,5 +76,6 @@
     <a href="#" class="hover:underline text-white">Datenschutz</a>
   </div>
 </footer>
+
 </body>
 </html>
