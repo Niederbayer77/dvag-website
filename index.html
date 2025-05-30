@@ -8,113 +8,56 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .gold { background-color: #D4AF37; color: white; }
+    .gold-text { color: #D4AF37; }
     .gold:hover { background-color: #c09c2e; }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-[#003366]">Beraten statt bluffen</h1>
-      
-
-<nav class="hidden md:flex gap-6 text-[#003366] font-medium">
-  <a href="index.html">Start</a>
-  <a href="#">Über mich</a>
-  <a href="#">Beratung</a>
-  <a href="#">Lösungen</a>
-  <a href="#">Reels & Tipps</a>
-  <a href="#">Kundenstimmen</a>
-  <a href="#">Termin</a>
-</nav>
-
-
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-3xl text-[#003366]">☰</button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden flex-col text-center pb-4 text-[#003366] font-medium">
-      <a href="#" class="py-1">Start</a>
-      <a href="#" class="py-1">Über mich</a>
-      <a href="#" class="py-1">Beratung</a>
-      <a href="#" class="py-1">Lösungen</a>
-      <a href="#" class="py-1">Reels & Tipps</a>
-      <a href="#" class="py-1">Kundenstimmen</a>
-      <a href="#" class="py-1">Termin</a>
+  <header class="sticky top-0 z-50" style="background-color:#111111;">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4 text-white">
+      <h1 class="text-xl font-bold">Beraten statt bluffen</h1>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="index.html" class="hover:underline">Start</a>
+        <a href="#" class="hover:underline">Über mich</a>
+        <a href="#" class="hover:underline">Beratung</a>
+        <a href="#" class="hover:underline">Lösungen</a>
+        <a href="#" class="hover:underline">Reels & Tipps</a>
+        <a href="#" class="hover:underline">Kundenstimmen</a>
+        <a href="#" class="hover:underline">Termin</a>
+      </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="max-w-7xl mx-auto p-6 flex flex-col-reverse md:flex-row items-center gap-8">
-    <div class="md:w-1/2 text-center md:text-left">
-      <h2 class="text-3xl font-bold text-[#003366] mb-4">Finanzberatung ohne Fachchinesisch</h2>
-      <p class="mb-6">Mit Verstand. Für Menschen.</p>
-      <a href="#" class="inline-block px-6 py-3 gold rounded">Jetzt kostenloses Erstgespräch buchen</a>
-      <p class="mt-2 text-sm text-gray-500">Mit Klick auf den Button stimmen Sie der Kontaktaufnahme gemäß DSGVO zu.</p>
-    </div>
-    <div class="md:w-1/2 flex justify-center">
-      <img src="portrait.jpg" alt="Max Moser" class="rounded-xl w-64 h-auto shadow" />
+  <section class="w-full py-10" style="background-color:#D4AF37; color:white;">
+    <div class="max-w-7xl mx-auto p-6 flex flex-col-reverse md:flex-row items-center gap-8">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">Finanzberatung ohne Fachchinesisch</h2>
+        <p class="mb-6">Mit Verstand. Für Menschen.</p>
+        <a href="#" class="inline-block px-6 py-3 bg-white text-black rounded font-bold">Jetzt kostenloses Erstgespräch buchen</a>
+        <p class="mt-2 text-sm text-white">Mit Klick auf den Button stimmen Sie der Kontaktaufnahme gemäß DSGVO zu.</p>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="img/portrait.jpg" alt="Max Moser" class="rounded-xl w-64 h-auto shadow-lg" />
+      </div>
     </div>
   </section>
 
-  
-<!-- Pyramide -->
-<section class="max-w-4xl mx-auto mt-12 text-center">
-  <h2 class="text-2xl font-bold text-[#003366] mb-4">Stabilität braucht Struktur</h2>
-  <img src="pyramide.png" alt="Vermögenspyramide" class="mx-auto w-full max-w-md rounded shadow" />
-</section>
-
-<!-- Zielgruppen -->
-<section class="max-w-4xl mx-auto mt-12 px-4">
-  <h2 class="text-2xl font-bold text-[#003366] mb-6 text-center">Für wen ist das?</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-    <div><a href="zielgruppe-berufseinsteiger.html" class="hover:underline text-[#003366]">👨‍🎓 Berufseinsteiger</a></div>
-    <div><a href="zielgruppe-familien.html" class="hover:underline text-[#003366]">👨‍👩‍👧‍👦 Familien</a></div>
-    <div><a href="zielgruppe-beamte.html" class="hover:underline text-[#003366]">🎓 Beamte</a></div>
-    <div><a href="zielgruppe-selbstaendige.html" class="hover:underline text-[#003366]">💼 Selbstständige</a></div>
-    <div class="col-span-2 md:col-span-1"><a href="zielgruppe-unternehmen.html" class="hover:underline text-[#003366]">🏢 Unternehmen</a></div>
-  </div>
-</section>
-
-<!-- Upload & Analyse -->
-<section class="max-w-xl mx-auto mt-16 p-6 border border-gray-200 rounded shadow bg-gray-50">
-  <h2 class="text-xl font-bold text-[#003366] mb-4 text-center">Individuelle Finanzanalyse</h2>
-  <p class="mb-4 text-center">Laden Sie hier Ihre ausgefüllte Analyse-PDF hoch.</p>
-  <form class="space-y-4">
-    <input type="text" placeholder="Ihr Name *" required class="w-full px-4 py-2 border rounded" />
-    <input type="email" placeholder="Ihre E-Mail-Adresse *" required class="w-full px-4 py-2 border rounded" />
-    <input type="file" required class="w-full px-4 py-2 border rounded bg-white" />
-    <input type="submit" value="Datei hochladen" class="gold px-4 py-2 rounded w-full" />
-  </form>
-  <p class="text-xs text-center text-gray-400 mt-2">Die Datei wird sicher per E-Mail an uns weitergeleitet.</p>
-</section>
-
-<!-- Kundenzitate -->
-<section class="max-w-4xl mx-auto mt-16 px-4">
-  <h2 class="text-2xl font-bold text-[#003366] mb-6 text-center">Das sagen unsere Kunden</h2>
-  <div class="grid gap-6 md:grid-cols-3 text-center text-sm text-gray-700">
-    <div class="p-4 border rounded shadow">„Ich hätte nie gedacht, dass eine Finanzanalyse so viel bringen kann.“<br><span class="mt-2 block font-semibold">– Michaela K.</span></div>
-    <div class="p-4 border rounded shadow">„Die Beratung war klar, ehrlich und auf Augenhöhe. Top!“<br><span class="mt-2 block font-semibold">– Jonas L.</span></div>
-    <div class="p-4 border rounded shadow">„Max hat mir geholfen, endlich Struktur in meine Finanzen zu bringen.“<br><span class="mt-2 block font-semibold">– Daniel M.</span></div>
-  </div>
-</section>
-
+  <!-- Platzhalter für weiteren Inhalt -->
+  <main class="max-w-7xl mx-auto p-8">
+    <p class="text-center text-gray-500 text-lg">Hier folgen Pyramide, Zielgruppen, Upload-Bereich & Kundenmeinungen…</p>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-[#f5f5f5] text-center text-sm text-gray-600 py-6 mt-16 fixed bottom-0 w-full">
+  <footer style="background-color:#111111; color:white;" class="text-center text-sm py-6">
     <p>&copy; 2025 Max Moser | Beraten statt bluffen</p>
     <div class="mt-2 space-x-4">
-      <a href="#" class="hover:underline text-[#003366]">Impressum</a>
-      <a href="#" class="hover:underline text-[#003366]">Datenschutz</a>
+      <a href="#" class="hover:underline text-white">Impressum</a>
+      <a href="#" class="hover:underline text-white">Datenschutz</a>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-      const menu = document.getElementById("mobile-menu");
-      menu.classList.toggle("hidden");
-    });
-  </script>
 </body>
 </html>
