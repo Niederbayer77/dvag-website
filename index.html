@@ -18,7 +18,15 @@
   <header class="sticky top-0 z-50" style="background-color:#111111;">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4 text-white">
       <h1 class="text-xl font-bold">Beraten statt bluffen</h1>
-      <nav class="hidden md:flex gap-6 font-medium">
+      
+<nav class="hidden md:flex gap-6 font-medium">
+  <a href="index.html" class="hover:underline">Start</a>
+  <a href="zielgruppe-berufseinsteiger.html" class="hover:underline">Berufseinsteiger</a>
+  <a href="zielgruppe-familien.html" class="hover:underline">Familien</a>
+  <a href="zielgruppe-beamte.html" class="hover:underline">Beamte</a>
+  <a href="zielgruppe-selbstaendige.html" class="hover:underline">Selbstständige</a>
+  <a href="zielgruppe-unternehmen.html" class="hover:underline">Unternehmen</a>
+
         <a href="index.html" class="hover:underline">Start</a>
         <a href="#" class="hover:underline">Über mich</a>
         <a href="#" class="hover:underline">Beratung</a>
@@ -46,7 +54,49 @@
   </section>
 
   <!-- Platzhalter für weiteren Inhalt -->
-  <main class="max-w-7xl mx-auto p-8">
+  
+<main class="max-w-7xl mx-auto p-8">
+  <!-- Pyramide -->
+  <section class="text-center my-10">
+    <h2 class="text-2xl font-bold text-[#003366] mb-4">Stabilität braucht Struktur</h2>
+    <img src="img/pyramide.png" alt="Vermögenspyramide" class="mx-auto w-full max-w-md rounded shadow" />
+  </section>
+
+  <!-- Zielgruppen -->
+  <section class="max-w-4xl mx-auto mt-12 px-4">
+    <h2 class="text-2xl font-bold text-[#003366] mb-6 text-center">Für wen ist das?</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+      <a href="zielgruppe-berufseinsteiger.html">👨‍🎓 Berufseinsteiger</a>
+      <a href="zielgruppe-familien.html">👨‍👩‍👧‍👦 Familien</a>
+      <a href="zielgruppe-beamte.html">🎓 Beamte</a>
+      <a href="zielgruppe-selbstaendige.html">💼 Selbstständige</a>
+      <a href="zielgruppe-unternehmen.html" class="col-span-2 md:col-span-1">🏢 Unternehmen</a>
+    </div>
+  </section>
+
+  <!-- Upload & Analyse -->
+  <section class="max-w-xl mx-auto mt-16 p-6 border border-gray-200 rounded shadow bg-gray-50">
+    <h2 class="text-xl font-bold text-[#003366] mb-4 text-center">Individuelle Finanzanalyse</h2>
+    <p class="mb-4 text-center">Laden Sie hier Ihre ausgefüllte Analyse-PDF hoch.</p>
+    <form class="space-y-4">
+      <input type="text" placeholder="Ihr Name *" required class="w-full px-4 py-2 border rounded" />
+      <input type="email" placeholder="Ihre E-Mail-Adresse *" required class="w-full px-4 py-2 border rounded" />
+      <input type="file" required class="w-full px-4 py-2 border rounded bg-white" />
+      <input type="submit" value="Datei hochladen" class="gold px-4 py-2 rounded w-full" />
+    </form>
+    <p class="text-xs text-center text-gray-400 mt-2">Die Datei wird sicher per E-Mail an uns weitergeleitet.</p>
+  </section>
+
+  <!-- Kundenzitate -->
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-2xl font-bold text-[#003366] mb-6 text-center">Das sagen unsere Kunden</h2>
+    <div class="grid gap-6 md:grid-cols-3 text-center text-sm text-gray-700">
+      <div class="p-4 border rounded shadow">„Ich hätte nie gedacht, dass eine Finanzanalyse so viel bringen kann.“<br><span class="mt-2 block font-semibold">– Michaela K.</span></div>
+      <div class="p-4 border rounded shadow">„Die Beratung war klar, ehrlich und auf Augenhöhe. Top!“<br><span class="mt-2 block font-semibold">– Jonas L.</span></div>
+      <div class="p-4 border rounded shadow">„Max hat mir geholfen, endlich Struktur in meine Finanzen zu bringen.“<br><span class="mt-2 block font-semibold">– Daniel M.</span></div>
+    </div>
+  </section>
+
     <p class="text-center text-gray-500 text-lg">Hier folgen Pyramide, Zielgruppen, Upload-Bereich & Kundenmeinungen…</p>
   </main>
 
